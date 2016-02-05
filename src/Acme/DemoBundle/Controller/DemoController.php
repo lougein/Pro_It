@@ -51,6 +51,7 @@ class DemoController extends Controller
             return new RedirectResponse($this->generateUrl('_demo'));
         }
 
-        return array('form' => $form->createView());
+        return array('form' => $form->createView()); 
+        
     }
 }
