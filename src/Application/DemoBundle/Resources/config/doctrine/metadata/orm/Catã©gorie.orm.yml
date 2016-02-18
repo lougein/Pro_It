@@ -1,0 +1,31 @@
+Cat„©gorie:
+    type: entity
+    table: cat√©gorie
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        description:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        collection:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+    lifecycleCallbacks: {  }

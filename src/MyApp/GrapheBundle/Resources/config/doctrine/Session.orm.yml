@@ -1,0 +1,13 @@
+MyApp\GrapheBundle\Entity\Session:
+    type: entity
+    table: session
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

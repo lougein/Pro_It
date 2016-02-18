@@ -1,0 +1,24 @@
+Stock:
+    type: entity
+    table: stock
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        etat:
+            type: boolean
+            nullable: false
+            comment: ''
+        quantite:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+    lifecycleCallbacks: {  }

@@ -1,0 +1,32 @@
+MyApp\GrapheBundle\Entity\Client:
+    type: entity
+    table: client
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categorie:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        sexe:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+        nbredevisite:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: nbreDeVisite
+    lifecycleCallbacks: {  }

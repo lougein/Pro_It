@@ -1,0 +1,40 @@
+MyApp\GrapheBundle\Entity\Cartefidelite:
+    type: entity
+    table: cartefidelite
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        tauxreduction:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: tauxReduction
+        pointfidelite:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: pointFidelite
+        seuilachat:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: seuilAchat
+        etat:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

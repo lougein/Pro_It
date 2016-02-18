@@ -1,0 +1,32 @@
+MyApp\GrapheBundle\Entity\Mall:
+    type: entity
+    table: mall
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        surface:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+        nbreboutique:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: nbreBoutique
+        nbreenseigne:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: nbreEnseigne
+    lifecycleCallbacks: {  }

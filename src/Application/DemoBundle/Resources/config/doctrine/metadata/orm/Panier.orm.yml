@@ -1,0 +1,40 @@
+Panier:
+    type: entity
+    table: panier
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        totalarticles:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: totalArticles
+        nbrarticle:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: nbrArticle
+        prixtotal:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: prixTotal
+        prixarticles:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: ''
+            column: prixArticles
+    lifecycleCallbacks: {  }
